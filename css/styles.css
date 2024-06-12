@@ -1,0 +1,105 @@
+/* Reset, layout, and other existing styles should remain here */
+
+/* Styles for full-page background image and content */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.full-page-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.about-me,
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: black;
+  background-color: rgba(204, 204, 204, 0.9);
+
+  /* Slightly translucent light grey background */
+  border: 2px solid white;
+
+  /* White border for better contrast */
+  border-radius: 10px;
+
+  /* Rounded corners */
+  max-width: 800px;
+
+  /* Max width for content */
+  margin: 20px auto;
+
+  /* Center content horizontally with some margin */
+  display: flex;
+
+  /* Add Flexbox */
+  flex-direction: column;
+
+  /* Stack items vertically */
+  align-items: flex-start;
+
+  /* Align items to the start (left) */
+}
+
+.about-me .h1tag {
+  margin-bottom: 10px;
+
+  /* Add some space below the heading */
+}
+
+.about-me .content-wrapper {
+  display: flex;
+
+  /* Add Flexbox */
+  align-items: center;
+
+  /* Center items vertically */
+}
+
+.about-me p {
+  margin-right: 20px;
+
+  /* Add space between the paragraph and the image */
+}
+
+.about-me img {
+  max-width: 300px;
+
+  /* Adjust the max width of the image as needed */
+  height: auto;
+
+  /* Maintain aspect ratio */
+}
+
+.about-me .h1tag h1 {
+  margin: 0;
+
+  /* Reset margin for the h1 */
+}
+
+.about-me a,
+.content a {
+  color: #1e488f;
+
+  /* Light blue links for better contrast */
+  text-decoration: none;
+
+  /* Remove underline from links */
+}
+
+.about-me a:hover,
+.content a:hover {
+  text-decoration: underline;
+
+  /* Underline links on hover */
+}
