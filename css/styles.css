@@ -15,10 +15,20 @@ body {
   background-attachment: fixed;
   font-family: Arial, sans-serif;
   /* Example font-family */
+  margin-top: 100px;
 }
 
 .full-page-image {
   display: none;
+}
+
+.me {
+  width: 250px;
+  /* Adjust the width as needed */
+  height: 150px;
+  /* Adjust the height as needed */
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the entire frame */
 }
 
 /* General styles for sections */
@@ -43,6 +53,8 @@ body {
 .about-me .h1tag {
   width: 100%;
   margin-bottom: 10px;
+  text-align: center;
+  /* Center align the content */
 }
 
 .about-me .content-row {
@@ -97,7 +109,30 @@ body {
   margin-bottom: 10px;
 }
 
-.contact-icon,
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition:
+    transform 0.3s ease,
+    fill 0.3s ease;
+  fill: black;
+  /* Initial color */
+}
+
+.contact-icon:hover {
+  transform: scale(1.2) translate(10%, -10%);
+  fill: inherit;
+  /* Color on hover */
+}
+
+.contact-icon:hover path {
+  fill: inherit;
+  /* Change fill to inherit on hover */
+}
+
 .project-icon {
   width: 40px;
   height: 40px;
@@ -107,7 +142,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-.contact-icon:hover,
 .project-icon:hover {
   transform: scale(1.2);
 }
@@ -147,12 +181,27 @@ body {
 .hobby-chev-down {
   cursor: pointer;
   /* Ensure pointer cursor for interaction */
-  transition: transform 0.3s ease;
-  /* Smooth transition */
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+  /* Smooth transition for transform and color */
   font-size: 25px;
+  color: #0366d6;
+  /* GitHub blue */
 }
 
 .chev-rotate {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+  /* Smooth transitions for transform and color */
   transform: rotate(90deg);
   /* Rotated position */
+  color: black;
+  /* Black color */
+}
+
+.chev-rotate:hover {
+  color: #070707;
+  /* GitHub blue color on hover */
 }
