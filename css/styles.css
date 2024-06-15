@@ -9,97 +9,154 @@ html {
   width: 100%;
 }
 
+body {
+  background-image: url('/images/wp6289812-neon-japanese-desktop-wallpapers.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .full-page-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  display: none;
 }
 
 .about-me,
-.content {
+.content,
+.projects {
   position: relative;
   z-index: 1;
   padding: 20px;
   color: black;
   background-color: rgba(204, 204, 204, 0.9);
-
-  /* Slightly translucent light grey background */
   border: 2px solid white;
-
-  /* White border for better contrast */
   border-radius: 10px;
-
-  /* Rounded corners */
   max-width: 800px;
-
-  /* Max width for content */
   margin: 20px auto;
-
-  /* Center content horizontally with some margin */
   display: flex;
-
-  /* Add Flexbox */
   flex-direction: column;
-
-  /* Stack items vertically */
   align-items: flex-start;
-
-  /* Align items to the start (left) */
 }
 
 .about-me .h1tag {
   margin-bottom: 10px;
-
-  /* Add some space below the heading */
 }
 
 .about-me .content-wrapper {
   display: flex;
-
-  /* Add Flexbox */
   align-items: center;
-
-  /* Center items vertically */
 }
 
 .about-me p {
   margin-right: 20px;
-
-  /* Add space between the paragraph and the image */
 }
 
 .about-me img {
   max-width: 300px;
-
-  /* Adjust the max width of the image as needed */
   height: auto;
-
-  /* Maintain aspect ratio */
 }
 
 .about-me .h1tag h1 {
   margin: 0;
-
-  /* Reset margin for the h1 */
 }
 
 .about-me a,
-.content a {
+.content a,
+.projects a {
   color: #1e488f;
-
-  /* Light blue links for better contrast */
   text-decoration: none;
-
-  /* Remove underline from links */
 }
 
 .about-me a:hover,
-.content a:hover {
+.content a:hover,
+.projects a:hover {
   text-decoration: underline;
+}
 
-  /* Underline links on hover */
+.content {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content p {
+  margin: 10px;
+  flex: 1;
+}
+
+.projects {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projects p {
+  margin: 10px;
+  flex: 1;
+}
+
+.content h2,
+.projects h2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-icon,
+.project-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon:hover,
+.project-icon:hover {
+  transform: scale(1.2);
+}
+
+.parent-drawer {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-1 {
+  flex-direction: column;
+}
+
+.drawer-2 {
+  flex-direction: column;
+}
+
+.drawer-3 {
+  flex-direction: column;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.chev1, .chev2, .chev11, .chev22, .chev111, .chev222 {
+  display: inline; /* or any other default display property */
 }
