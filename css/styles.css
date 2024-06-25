@@ -14,6 +14,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: Arial, sans-serif;
+
   /* Example font-family */
   margin-top: 100px;
 }
@@ -24,10 +25,13 @@ body {
 
 .me {
   width: 250px;
+
   /* Adjust the width as needed */
   height: 150px;
+
   /* Adjust the height as needed */
   object-fit: cover;
+
   /* Maintain aspect ratio and cover the entire frame */
 }
 
@@ -44,6 +48,7 @@ body {
   border-radius: 10px;
   max-width: 800px;
   margin: 20px auto 40px;
+
   /* Adjusted margin-bottom to 40px */
   display: flex;
   flex-direction: column;
@@ -54,6 +59,7 @@ body {
   width: 100%;
   margin-bottom: 10px;
   text-align: center;
+
   /* Center align the content */
 }
 
@@ -119,17 +125,20 @@ body {
     transform 0.3s ease,
     fill 0.3s ease;
   fill: black;
+
   /* Initial color */
 }
 
 .contact-icon:hover {
   transform: scale(1.2) translate(10%, -10%);
   fill: inherit;
+
   /* Color on hover */
 }
 
 .contact-icon:hover path {
   fill: inherit;
+
   /* Change fill to inherit on hover */
 }
 
@@ -180,13 +189,16 @@ body {
 .hobby-chev-right,
 .hobby-chev-down {
   cursor: pointer;
+
   /* Ensure pointer cursor for interaction */
   transition:
     transform 0.3s ease,
     color 0.3s ease;
+
   /* Smooth transition for transform and color */
   font-size: 25px;
   color: #0366d6;
+
   /* GitHub blue */
 }
 
@@ -194,14 +206,18 @@ body {
   transition:
     transform 0.3s ease,
     color 0.3s ease;
+
   /* Smooth transitions for transform and color */
   transform: rotate(90deg);
+
   /* Rotated position */
   color: black;
+
   /* Black color */
 }
 
 .chev-rotate:hover {
   color: #070707;
+
   /* GitHub blue color on hover */
 }
