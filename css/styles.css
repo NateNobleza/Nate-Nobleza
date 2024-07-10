@@ -1,28 +1,33 @@
-/* Reset and basic styles */
 body,
 html {
-  margin: 0 ;
+  margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-}
-
-
-body {
-  background-image: url('/images/wp6289812-neon-japanese-desktop-wallpapers.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: Arial, sans-serif;
-
-  /* Example font-family */
-  margin-top: 100px;
+  overflow: hidden;
+  /* Prevents scrolling */
 }
 
 .full-page-image {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  /* Places the image behind other content */
 }
+
+.content {
+  position: relative;
+  z-index: 1;
+  /* Ensures content is above the background image */
+  color: #fff;
+  /* For visibility, adjust as needed */
+}
+
+
 
 .me {
   width: 250px;
